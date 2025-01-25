@@ -86,16 +86,16 @@ class Host:
             return False
         # 申请成功添加反应后回到初始位置
         if self.image_search(self.get_image_path('requested'),screenshot,region=(305, 400, 60, 60)):
-            self.add_reaction()
+            #self.add_reaction()
             self.reset = True
             return False
         return False
 
 
     # 添加反应
-    def add_reaction(self) :
-        url = 'https://discord.com/api/v9/channels/{}/messages/{}/reactions/%F0%9F%91%8C/%40me?location=Message%20Hover%20Bar&type=0'.format(self.handle_message['channel_id'],self.handle_message['message_id'])
-        requests.put(url,proxies=self.proxies,headers={'Authorization':self.token})
+    #def add_reaction(self) :
+        #url = 'https://discord.com/api/v9/channels/{}/messages/{}/reactions/%F0%9F%91%8C/%40me?location=Message%20Hover%20Bar&type=0'.format(self.handle_message['channel_id'],self.handle_message['message_id'])
+        #requests.put(url,proxies=self.proxies,headers={'Authorization':self.token})
 
     # 抄的Sliverala大佬的方法
     def get_image_path(self, image_name):
