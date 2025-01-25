@@ -61,3 +61,9 @@ limit = 10
 *消息ID获取*
 
 ![img_3.png](img_3.png)
+
+# 运行
+将游戏停在主界面，运行脚本
+```sh
+python3 main.py
+```
